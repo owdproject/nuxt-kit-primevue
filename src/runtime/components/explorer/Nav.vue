@@ -4,7 +4,7 @@ import NavIcon from "./NavIcon.vue";
 import Minimize from "./button/Minimize.vue";
 import Maximize from "./button/Maximize.vue";
 import Close from "./button/Close.vue";
-import { useToggleWindowMaximize } from "nuxt-desktop/runtime/composables/useToggleWindowMaximize";
+import { useToggleWindowMaximize } from "@owdproject/nuxt/runtime/composables/useToggleWindowMaximize";
 const windowController = inject("windowController");
 const toggleWindowMaximize = useToggleWindowMaximize();
 const slots = useSlots();
@@ -23,7 +23,11 @@ function onWindowNavDestroy() {
 </script>
 
 <template>
-  <DesktopCoreWindowNav @dblclick="onWindowMaximize">
+  <DesktopCoreWindowNav
+    class="owd-window-nav"
+    :class="{ 'owd-window-nav--focused': windowController?.state?.focused }"
+    @dblclick="onWindowMaximize"
+  >
     <slot name="prepend" />
  
     <slot v-if="hasCustomTitle" name="title" />
@@ -42,7 +46,7 @@ function onWindowNavDestroy() {
       </div>
     </template>
  
-    <div class="owd-window-nav__btn-group owd-window-nav__btn-group--append">
+    <div class="desktop-window-nav__btn-group owd-window-nav__btn-group owd-window-nav__btn-group--append">
       <slot name="append" />
  
       <Minimize

@@ -2,7 +2,7 @@ import type { useConfirm } from 'primevue/useconfirm'
 import type {
   DesktopConfirmDialogOptions,
   DesktopDialogProvider,
-} from 'nuxt-desktop/runtime/dialogs/desktopDialogProvider'
+} from '@owdproject/nuxt/runtime/dialogs/desktopDialogProvider'
 
 /** Confirm API message may be a string or a delete-slot payload `{ message, toTrash }`. */
 type DeleteConfirmRequireOptions = Parameters<

@@ -23,7 +23,7 @@ defineOptions({ inheritAttrs: false })
 
 const attrs = useAttrs()
 const windowRootClass = computed(
-  () => [attrs.class, props.frameClass].filter(Boolean),
+  () => ['owd-window', attrs.class, props.frameClass].filter(Boolean),
 )
 const slots = useSlots()
 const hasHeaderBelowNavSlot = computed(

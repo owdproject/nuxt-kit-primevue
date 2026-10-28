@@ -6,7 +6,7 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@owdproject/core/runtime/*": ["../core/runtime/*"]
+      "@owdproject/nuxt/runtime/*": ["../nuxt/src/runtime/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.vue"]
