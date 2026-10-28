@@ -4,7 +4,7 @@ import NavIcon from "./NavIcon.vue";
 import Minimize from "./button/Minimize.vue";
 import Maximize from "./button/Maximize.vue";
 import Close from "./button/Close.vue";
-import { useToggleWindowMaximize } from "@owdproject/core/runtime/composables/useToggleWindowMaximize";
+import { useToggleWindowMaximize } from "nuxt-desktop/runtime/composables/useToggleWindowMaximize";
 const windowController = inject("windowController");
 const toggleWindowMaximize = useToggleWindowMaximize();
 const slots = useSlots();

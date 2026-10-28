@@ -60,11 +60,13 @@
     "@nuxt/schema": "^4.4.4",
     "@owdproject/core": "workspace:*",
     "@owdproject/module-fs": "workspace:*",
+    "nuxt-desktop": "workspace:*",
     "nuxt": "^4.4.4",
     "typescript": "~6.0.3"
   },
   "peerDependencies": {
-    "@owdproject/core": "^3.4.0",
+    "@owdproject/core": ">=4.0.0-alpha.0",
+    "nuxt-desktop": ">=1.0.0",
     "@owdproject/module-fs": "^0.0.6"
   },
   "peerDependenciesMeta": {

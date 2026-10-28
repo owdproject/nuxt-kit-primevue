@@ -1,8 +1,8 @@
 import type { NuxtApp } from 'nuxt/app'
 import ConfirmationService from 'primevue/confirmationservice'
 import type { useConfirm } from 'primevue/useconfirm'
-import { DESKTOP_DIALOG_PROVIDER_KEY } from '@owdproject/core/runtime/constants/desktopShellKeys'
-import type { DesktopDialogProvider } from '@owdproject/core/runtime/dialogs/desktopDialogProvider'
+import { DESKTOP_DIALOG_PROVIDER_KEY } from 'nuxt-desktop/runtime/constants/desktopShellKeys'
+import type { DesktopDialogProvider } from 'nuxt-desktop/runtime/dialogs/desktopDialogProvider'
 import { createDesktopDialogs } from './createDesktopDialogs'
 
 type ConfirmApi = ReturnType<typeof useConfirm>
