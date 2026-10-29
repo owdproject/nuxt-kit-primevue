@@ -11,7 +11,7 @@ function resolveConfirmApi(nuxtApp: NuxtApp): ConfirmApi {
   const confirm = nuxtApp.vueApp.config.globalProperties.$confirm
   if (!confirm || typeof confirm.require !== 'function') {
     throw new Error(
-      '[kit-primevue] PrimeVue ConfirmationService is not registered on vueApp.',
+      '[kit-nuxt-primevue] PrimeVue ConfirmationService is not registered on vueApp.',
     )
   }
   return confirm as ConfirmApi

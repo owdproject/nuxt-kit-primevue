@@ -13,7 +13,7 @@ import { registerTailwindPath } from './kit/registerTailwindPath'
 export interface KitPrimevueModuleOptions {
   /**
    * Register `DesktopExplorer*` components (Workspace, FileEntry, …).
-   * Requires `@owdproject/module-fs` in the app when enabled (default).
+   * Requires `@owdproject/module-nuxt-fs` in the app when enabled (default).
    * Set `false` for PrimeVue + dialogs only.
    */
   explorer?: boolean
@@ -93,7 +93,7 @@ function mergeDesktopTailwindContent(
 
   if (nuxt.options.dev && merged.length > 0) {
     console.info(
-      '[desktop-kit-primevue] Tailwind content:',
+      '[desktop-kit-nuxt-primevue] Tailwind content:',
       merged.length,
       'paths:',
       merged,
@@ -117,7 +117,7 @@ async function setupDesktopTailwind(nuxt: Nuxt) {
 
 export default defineNuxtModule<KitPrimevueModuleOptions>({
   meta: {
-    name: 'desktop-kit-primevue',
+    name: 'desktop-kit-nuxt-primevue',
     configKey: 'kitPrimevue',
   },
   defaults: {
