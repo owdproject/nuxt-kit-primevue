@@ -1,7 +1,7 @@
 <script setup>
-import { useExplorerWindow } from '@owdproject/module-nuxt-fs/runtime/composables/useExplorerWindow'
+import { useExplorerWindow } from '@owdproject/nuxt-module-fs/runtime/composables/useExplorerWindow'
 import { useI18n } from 'vue-i18n'
-import { explorerEntryAbsolutePath } from '@owdproject/module-nuxt-fs/runtime/utils/utilExplorerEntryPath'
+import { explorerEntryAbsolutePath } from '@owdproject/nuxt-module-fs/runtime/utils/utilExplorerEntryPath'
 import Frame from './Frame.vue'
 import Chrome from './Chrome.vue'
 import FilePane from './FilePane.vue'

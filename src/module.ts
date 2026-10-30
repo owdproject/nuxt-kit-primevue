@@ -13,7 +13,7 @@ import { registerTailwindPath } from './kit/registerTailwindPath'
 export interface KitPrimevueModuleOptions {
   /**
    * Register `DesktopExplorer*` components (Workspace, FileEntry, …).
-   * Requires `@owdproject/module-nuxt-fs` in the app when enabled (default).
+   * Requires `@owdproject/nuxt-module-fs` in the app when enabled (default).
    * Set `false` for PrimeVue + dialogs only.
    */
   explorer?: boolean

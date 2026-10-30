@@ -5,7 +5,7 @@ export default defineBuildConfig({
   externals: [
     '@nuxt/kit',
     '@owdproject/core',
-    '@owdproject/module-nuxt-fs',
+    '@owdproject/nuxt-module-fs',
     'vue3-selecto',
     'primevue',
     'primevue/useconfirm',
